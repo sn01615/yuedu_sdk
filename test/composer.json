@@ -1,0 +1,11 @@
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:sn01615/yuedu_sdk.git"
+        }
+    ],
+    "require": {
+        "sn01615/yuedu_sdk": "dev-master"
+    }
+}

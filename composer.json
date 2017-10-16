@@ -1,0 +1,25 @@
+{
+	"name" : "sn01615/yuedu_sdk",
+	"description" : "http://yuedu.163.com/ 网易云阅读SDK",
+	"type" : "library",
+	"license" : "Apache License 2.0",
+	"authors" : [{
+			"name" : "YangLong",
+			"email" : "168119405@qq.com"
+		}
+	],
+	"autoload" : {
+		"psr-4" : {
+			"Yuedu\\" : "src"
+		}
+	},
+	"repositories" : [{
+			"type" : "git",
+			"url" : "git@github.com:sn01615/yuedu_sdk.git",
+			"name" : "GitHub"
+		}
+	],
+	"support" : {
+		"issues" : "https://github.com/sn01615/yuedu_sdk/issues"
+	}
+}
