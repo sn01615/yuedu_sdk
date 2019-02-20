@@ -45,7 +45,7 @@ $client->setConsumerSecret('??');
  'status' => 0,
  'publishTime' => microtime(true)
  ])); */
-print_r($client->list([]));
+print_r($client->getList([]));
 /* print_r($client->info([
  'bookKey' => 123456
  ])); */

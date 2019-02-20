@@ -2,7 +2,7 @@
 	"name" : "sn01615/yuedu_sdk",
 	"description" : "http://yuedu.163.com/ 网易云阅读SDK",
 	"type" : "library",
-	"license" : "Apache License 2.0",
+	"license" : "Apache-2.0",
 	"authors" : [{
 			"name" : "YangLong",
 			"email" : "168119405@qq.com"

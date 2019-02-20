@@ -1,4 +1,5 @@
 <?php
+
 namespace Yuedu\Book;
 
 /**
@@ -49,7 +50,7 @@ class Client
     {
         ksort($args);
         $_args = implode('', $args);
-        return md5("{$httpMethod}{$url}{$_args}{$this->secret}");
+        return md5("{$httpMethod}{$url}{$_args}{$this->consumerSecret}");
     }
 
     private function getSign($httpMethod, $url, $args)
@@ -63,7 +64,7 @@ class Client
     private function timestamp13()
     {
         list ($usec, $sec) = explode(" ", microtime());
-        return (float) sprintf('%.0f', ((float) $usec + (float) $sec) * 1000);
+        return (float)sprintf('%.0f', ((float)$usec + (float)$sec) * 1000);
     }
 
     public function category()
@@ -87,9 +88,9 @@ class Client
         return $this->call($callStr, $args, 'POST');
     }
 
-    public function list(array $args = [])
+    public function getList(array $args = [])
     {
-        $apiName = $this->getApiName(__FUNCTION__);
+        $apiName = $this->getApiName('list');
         $callStr = $apiName;
         return $this->call($callStr, $args);
     }
